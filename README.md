@@ -1,6 +1,6 @@
 # Hydrator
 
-Hydrate and extract functions made simple. Ideally for flat or primitive data.
+Hydrate and extract functions made simple. Ideally for flat objects or primitive data.
 
 ## Installation
 
@@ -50,7 +50,7 @@ Extraction:
     //   ),
     //   'polite' => true,
     // )
-```
+``
 
 
 Hydration:
