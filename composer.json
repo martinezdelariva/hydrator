@@ -1,0 +1,40 @@
+{
+  "name": "martinezdelariva/hydrator",
+  "description": "Hydrate and extract functions made simple. Ideally for flat or primitive data.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "José Luis Martínez de la Riva",
+      "email": "martinezdelariva@gmail.com",
+      "homepage": "http://martinezdelariva.com"
+    }
+  ],
+  "keywords": [
+    "hydrator",
+    "hydration",
+    "serialization",
+    "serialize"
+  ],
+  "require": {
+    "php": ">=7.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Martinezdelariva\\Hydrator\\": "src"
+    },
+    "files": [
+      "src/functions.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Martinezdelariva\\Test\\": "test"
+    }
+  },
+  "scripts": {
+    "test": "./vendor/bin/phpunit"
+  }
+}
