@@ -22,14 +22,14 @@ Having the following class:
         private $name;
         private $age;
         private $hobbies = [];
-        private $polite;
+        private $student = false;
     
-        public function __construct(string $name, int $age, array $hobbies, bool $polite = true)
+        public function __construct(string $name, int $age, array $hobbies, bool $student)
         {
             $this->name     = $name;
             $this->age      = $age;
             $this->hobbies  = $hobbies;
-            $this->polite   = $polite;
+            $this->student  = $student;
         }
     }
 ```
@@ -39,7 +39,7 @@ Extraction:
 ```php
     use function Martinezdelariva\Hydrator\extract;
 
-    $person = new Person("John", 29, ["soccer", "reading"]);
+    $person = new Person("John", 29, ["soccer", "reading"], true);
     extract($person);
    
     // array (
@@ -50,7 +50,7 @@ Extraction:
     //     0 => 'soccer',
     //     1 => 'reading',
     //   ),
-    //   'polite' => true,
+    //   'student' => true,
     // )
 ``
 
