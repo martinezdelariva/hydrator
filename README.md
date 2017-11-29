@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/martinezdelariva/hydrator.svg?branch=master)](https://travis-ci.org/martinezdelariva/hydrator)
+
 # Hydrator
 
 Hydrate and extract functions made simple. Ideally for flat objects or primitive data.
