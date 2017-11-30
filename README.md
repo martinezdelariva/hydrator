@@ -43,22 +43,21 @@ Extraction:
     extract($person);
    
     // array (
-    //   'name' => 'John',
-    //   'age' => 29,
-    //   'hobbies' => 
-    //   array (
-    //     0 => 'soccer',
-    //     1 => 'reading',
+    //   'name'    => 'John',
+    //   'age'     => 29,
+    //   'hobbies' => array (
+    //       0 => 'soccer',
+    //       1 => 'reading',
     //   ),
     //   'student' => true,
     // )
-``
+```
 
 
 Hydration:
 
 ```php
-    use function Martinezdelariva\Hydrator\extract;
+    use function Martinezdelariva\Hydrator\hydrate;
     
     $values = [
         "name"    => "Maria",
@@ -78,5 +77,4 @@ Hydration:
     //         string(6) "coding"
     //       }
     //   ["student":"Person":private] => bool(false)
-
 ```
